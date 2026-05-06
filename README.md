@@ -40,11 +40,23 @@ La aplicación web del **Consultorio Odontológico - Rosa Ducuara** permite:
 
 ## Autores
 | Usuario | Rol |
-|---|---|
+|----|---|
 | [@Loigon12](https://github.com/Loigon12) | Desarrollador principal / Repositorio |
 
 > Puedes consultar todos los colaboradores del proyecto en la sección [Contributors](https://github.com/Loigon12/Consultorio/graphs/contributors) del repositorio.
 
 ## Flujo de trabajo Git
 
+** rama de develop :** se utilizó como conección entre las otras sub ramas con la principal.
+
+** ramas feature/ :** las ramas feature utilizadas fueron feature/documentacion-extra y feature/readme-base.
+
+** rama release/v1.0.0 :** rama anterior a la union de todos los cambios al principal.
+
+**  hotfix/readme-typo:** No se utilizó.
+
+** tag v1.0.0 :** Todavía no se realiza.
+
 ## Evidencias
+
+https://drive.google.com/drive/folders/1AOETNa_HPYbj6Fw48gN_nXcltwGUs_d5?usp=sharing
