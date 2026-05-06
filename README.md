@@ -40,7 +40,7 @@ La aplicación web del **Consultorio Odontológico - Rosa Ducuara** permite:
 
 ## Autores
 | Usuario | Rol |
-|---|---|
+|----|---|
 | [@Loigon12](https://github.com/Loigon12) | Desarrollador principal / Repositorio |
 
 > Puedes consultar todos los colaboradores del proyecto en la sección [Contributors](https://github.com/Loigon12/Consultorio/graphs/contributors) del repositorio.
