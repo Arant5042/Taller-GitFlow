@@ -1,0 +1,17 @@
+{
+  "name": "gitflow-practice-template",
+  "version": "1.0.0",
+  "description": "Repositorio plantilla para una práctica guiada de Git y Git Flow.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "create:initial-issues": "node scripts/create-initial-issues.js",
+    "create:next-issue": "node scripts/create-next-issue.js",
+    "validate:progress": "node scripts/validate-progress.js",
+    "validate:readme": "node scripts/validate-readme.js",
+    "validate:gitflow": "node scripts/validate-gitflow.js"
+  }
+}

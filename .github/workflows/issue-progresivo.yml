@@ -1,0 +1,31 @@
+name: Issue progresivo
+
+on:
+  issues:
+    types:
+      - closed
+      - reopened
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  crear-siguiente-issue:
+    name: Crear siguiente misión
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Crear siguiente issue
+        run: npm run create:next-issue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

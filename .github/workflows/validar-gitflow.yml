@@ -1,0 +1,45 @@
+name: Validar Git Flow
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: Tipo de validación
+        required: true
+        default: final
+        type: choice
+        options:
+          - final
+          - progresiva
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  validar-gitflow:
+    name: Revisar ramas y flujo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Obtener ramas remotas
+        run: git fetch --prune origin '+refs/heads/*:refs/remotes/origin/*'
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validar Git Flow
+        run: npm run validate:gitflow
+        env:
+          GITFLOW_STRICT_FINAL: ${{ github.event_name == 'workflow_dispatch' && inputs.modo == 'final' && 'true' || 'false' }}
