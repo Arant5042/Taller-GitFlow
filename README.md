@@ -47,6 +47,16 @@ La aplicación web del **Consultorio Odontológico - Rosa Ducuara** permite:
 
 ## Flujo de trabajo Git
 
+** rama de develop :** se utilizó como conección entre las otras sub ramas con la principal.
+
+** ramas feature/ :** las ramas feature utilizadas fueron feature/documentacion-extra y feature/readme-base.
+
+** rama release/v1.0.0 :** rama anterior a la union de todos los cambios al principal.
+
+**  hotfix/readme-typo:** No se utilizó.
+
+** tag v1.0.0 :** Todavía no se realiza.
+
 ## Evidencias
 
 https://drive.google.com/drive/folders/1AOETNa_HPYbj6Fw48gN_nXcltwGUs_d5?usp=sharing
